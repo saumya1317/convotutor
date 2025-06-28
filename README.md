@@ -1,40 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ConvoTutor - AI-Powered Learning Platform (SaaS)
 
-## Getting Started
+ConvoTutor is a Software as a Service (SaaS) platform that revolutionizes online learning through AI-powered tutoring. Our platform offers scalable, subscription-based access to personalized AI tutors that help students master any subject through interactive conversations.
 
-First, run the development server:
+![ConvoTutor Hero](public/readme/hero.png)
 
+## 🌟 Features
+
+### Core Features (Free Tier)
+- **AI Companions**: Create and interact with basic AI tutors
+- **Real-time Learning**: Engage in dynamic learning conversations
+- **Multi-Subject Support**: Access tutoring across various subjects
+- **Basic Progress Tracking**: Monitor your fundamental learning metrics
+
+### Premium Features (Paid Tiers)
+- **Unlimited AI Companions**: Create and customize unlimited AI tutors
+- **Advanced Analytics**: Detailed learning progress and performance metrics
+- **Priority Support**: Get faster responses to your queries
+- **Custom Companion Training**: Create specialized tutors for specific topics
+- **Enhanced Interaction Limits**: More conversation time with AI tutors
+- **Advanced Quiz Generation**: Create and take comprehensive assessments
+
+## 💰 Pricing Tiers
+
+### Free Tier
+- Limited AI companions
+- Basic features
+- Community support
+
+### Pro Tier
+- Unlimited AI companions
+- All premium features
+- Priority support
+- Advanced analytics
+
+### Enterprise Tier
+- Custom solutions
+- Dedicated support
+- API access
+- Custom integrations
+- Team management
+
+## 🚀 Tech Stack
+
+- **Frontend**: React 19.0.0
+- **Framework**: Next.js 15.3.4
+- **Authentication**: Clerk
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI
+- **Form Handling**: React Hook Form with Zod validation
+- **AI Integration**: VAPI AI
+- **Error Monitoring**: Sentry
+- **Database**: Supabase
+
+## 💻 Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm (Included with Node.js)
+- Git
+
+## 🛠️ Installation
+
+1. Clone the repository:
+bash git clone [https://github.com/saumya1317/convotutor.git](https://github.com/saumya1317/convotutor.git)
+``` 
+
+2. Navigate to the project directory:
+```
+bash cd convotutor
+``` 
+
+3. Install dependencies:
+```
+bash npm install
+``` 
+
+4. Create a `.env` file in the root directory with necessary environment variables:
+```
+env NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key CLERK_SECRET_KEY=your_clerk_secret_key NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/ SUPABASE_URL=your_supabase_url SUPABASE_ANON_KEY=your_supabase_anon_key
+``` 
+
+5. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```
